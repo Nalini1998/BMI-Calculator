@@ -1,0 +1,169 @@
+body{
+  background: #F73946; 
+  background: -webkit-linear-gradient(left top, #006064, #A1887F); 
+  background: -o-linear-gradient(bottom right, #006064, #A1887F);
+  background: -moz-linear-gradient(bottom right, #006064, #A1887F);
+  background: linear-gradient(to bottom right, #006064, #A1887F);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.bmi-calculator{
+  margin: 75px auto;
+  width: 100%;
+  max-width: 700px;
+  display: table;
+  background: #CFD8DC;
+  color: #4E5279;
+  border-radius: 5px;
+}
+.result{
+  display: table;
+  width: 100%;
+}
+.result-text {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #4DB6AC; 
+  background: -webkit-linear-gradient(left top, #4DB6AC, #B0BEC5); 
+  background: -o-linear-gradient(bottom right, #4DB6AC, #B0BEC5);
+  background: -moz-linear-gradient(bottom right, #4DB6AC, #B0BEC5);
+  background: linear-gradient(to bottom right, #4DB6AC, #B0BEC5);
+  transition: all 0.4s ease-in;
+  -webkit-transition-delay: 2s; /* Safari */
+    transition-delay: 2s;
+  box-shadow: 0px 1px 10px 2px #fff;
+  h1{
+      color: #263238;
+      font-size: 4em;
+      margin: 18px 0;
+      padding: 0;
+  }
+  small{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #263238;
+    margin: 20px;
+  }
+}
+.calculator{
+  padding: 20px;  
+}
+.calculator-title{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2.0em;
+  padding: 15px;
+  margin: 15px;
+}
+.calculator-hr{
+  margin-top: -10px;
+  width: 80%;
+  border: 1.2px solid #F73946;
+  border-radius: 15px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 85%; 
+  height: 4px;
+  background: #263238;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: -15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer; 
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #263238;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #F73946;
+  cursor: pointer;
+}
+.field-text{
+  font-size: 2em;
+  color: #263238;
+  font-weight: 700;
+  padding: 8px;
+  display: inline-block;
+}
+.label-height:after{
+  content: ' cm';
+  font-size: 0.5em;
+  color: #4E5279;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -12px;
+}
+.label-weight:after{
+  content: ' kg';
+  font-size: 0.5em;
+  color: #4E5279;
+  font-weight: 400;
+}
+.submit{
+  text-align: center;
+}
+#submit{
+  background: #F73946; 
+  background: -webkit-linear-gradient(left top, #607D8B, #B0BEC5); 
+  background: -o-linear-gradient(bottom right, #607D8B, #B0BEC5);
+  background: -moz-linear-gradient(bottom right, #607D8B, #B0BEC5);
+  background: linear-gradient(to bottom right, #607D8B, #B0BEC5);
+  border: none;
+  border-radius: 10px;
+  padding: 6px 15px;
+  color: #2B2D41;
+  font-size: 1.3em;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  &:hover, &:focus{
+    color: #FFF;
+    outline: none;
+    cursor: grabbing;
+    background: #263238; 
+  }
+}

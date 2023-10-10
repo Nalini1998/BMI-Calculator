@@ -1,0 +1,24 @@
+.container
+  .row
+    .col-md-12
+      .bmi-calculator
+        .result
+          .result-text 
+            h1
+              span#bmiValue 18.4 
+              | kg/cm2
+            small#bmid Normal
+        .calculator
+          h2.text-center.calculator-title What's Your BMI?
+          hr.calculator-hr
+          .height
+            input(class="value_range",id="height",type="range",value="153",min="100",max="250", step="1")
+            .label-height.field-text 0
+          .weight
+            input(class="value_range",id="weight",type="range",value="43",min="0",max="250", step="1")
+            .label-weight.field-text 0
+          .submit
+            input(type="submit",id="submit", value="Calculate", class="submit")
+          
+        
+    
